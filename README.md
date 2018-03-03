@@ -16,3 +16,12 @@ Although I am not using this script for my project anymore (and neither nodeJs),
 # Mention
 I am now using the repository found here: [python-bittrex-websocket](https://github.com/slazarov/python-bittrex-websocket)
 Copyright (c) 2017 Stanislav Lazarov 
+
+# Methods
+
+```
+market_trigger(token_name,path);
+//token_name has to be in the short form : e.g. "LTC", "XMR"
+//path should be the absolute path where the files should be saved
+```
+The method opens a websocket connection. If more markets are intended to be connected, call the market_trigger function in a loop that parses through the desired token names. 
