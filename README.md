@@ -14,5 +14,5 @@ I have used this script while developing a trading bot in the last quarter of 20
 Although I am not using this script for my project anymore (and neither nodeJs), I found the writing of this script to be both fun and educational.
 
 # Mention
-I should mention that I am now using the repository found here: [bittrex-market](https://github.com/slazarov/python-bittrex-websocket)
+I am now using the repository found here: [bittrex-market](https://github.com/slazarov/python-bittrex-websocket)
 Copyright (c) 2017 Stanislav Lazarov 
