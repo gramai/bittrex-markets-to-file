@@ -11,7 +11,7 @@ var fs = require('fs');
 // book depth
 var book_max=10;
 
-function market_trigger(market){
+function market_trigger(market,path){
     var ethereum_slice_ask=new Array(book_max);
     var ethereum_slice_bid=new Array (book_max);
     var bitcoin_slice_ask=new Array(book_max);
@@ -44,7 +44,7 @@ if(market!="ETH"){
                 
                 ethereum_slice_bid = ethereum.bids.slice(0,10);
                 console.log(ethereum_slice_bid);
-                fs.writeFile("/home/emanuel/files/ETH-"+market+".txt", ethereum_slice_ask.concat(ethereum_slice_bid) , function(err) {
+                fs.writeFile(path+"/ETH-"+market+".txt", ethereum_slice_ask.concat(ethereum_slice_bid) , function(err) {
                     if(err) {
                         return console.log(err);
                     }
@@ -82,7 +82,7 @@ marketManager.market('BTC-'+market, (err, bitcoin) => {
             //}
             bitcoin_slice_bid = bitcoin.bids.slice(0,10);
             console.log(bitcoin_slice_bid);
-            fs.writeFile("/home/emanuel/files/BTC-"+market+".txt", bitcoin_slice_ask.concat(bitcoin_slice_bid) , function(err) {
+            fs.writeFile(path+"/BTC-"+market+".txt", bitcoin_slice_ask.concat(bitcoin_slice_bid) , function(err) {
                 if(err) {
                     return console.log(err);
                 }
@@ -120,7 +120,7 @@ else{
                 //}
                 bitcoin_slice_bid = bitcoin.bids.slice(0,10);
                 console.log(bitcoin_slice_bid);
-                fs.writeFile("/home/emanuel/files/BTC-"+market+".txt", bitcoin_slice_ask.concat(bitcoin_slice_bid) , function(err) {
+                fs.writeFile(path+"/BTC-"+market+".txt", bitcoin_slice_ask.concat(bitcoin_slice_bid) , function(err) {
                     if(err) {
                         return console.log(err);
                     }
@@ -133,7 +133,3 @@ else{
 }
 
 }
-
-
-
-
