@@ -1,0 +1,28 @@
+{
+  "name": "bittrex-websocket-to-file",
+  "version": "0.0.8",
+  "description": "Saves BTC-<token_name> and ETH-<token_name> book details (price and quantity) ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gramai/bittrex-market-js.git"
+  },
+  "keywords": [
+    "bittrex",
+    "websocket",
+    "nodejs"
+  ],
+  "author": "Grama Ioan-Emanuel <gramai.emanuel@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/gramai/bittrex-market-js/issues"
+  },
+  "dependencies": {
+      "bittrex-market-js": "gramai/bittrex-market-js#master"
+  },
+  "homepage": "https://github.com/gramai/bittrex-market-js#readme"
+}
+
