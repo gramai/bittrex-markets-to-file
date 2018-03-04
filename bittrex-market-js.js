@@ -1,13 +1,13 @@
 #!/usr/bin/env nodejs
 const MarketManager = require('bittrex-market')
-
+const EventEmitter = require('events')
 //set to true if you want to replay historic trades
 const marketManager = new MarketManager(false)
 
 var fs = require('fs');
 
-class Trigger {
-    constructor(){}
+class Trigger extends EventEmitter{
+    constructor(){super();}
     market_trigger(market,path,book_depth){
         var ethereum_slice_ask=new Array(book_depth); 
         var ethereum_slice_bid=new Array (book_depth); 
