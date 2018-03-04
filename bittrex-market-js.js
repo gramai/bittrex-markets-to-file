@@ -7,7 +7,7 @@ const marketManager = new MarketManager(false)
 var fs = require('fs');
 
 class Trigger extends EventEmitter{
-    constructor(){super();}
+    constructor(){super()}
     market_trigger(market,path,book_depth){
         var ethereum_slice_ask=new Array(book_depth); 
         var ethereum_slice_bid=new Array (book_depth); 
