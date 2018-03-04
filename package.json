@@ -1,0 +1,22 @@
+{
+  "name": "bittrex-save-locally-own",
+  "version": "0.0.1",
+  "description": "Locally save and continuously update BTC-<token_name> and ETH-<token_name> book data (quantity and price) ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gramai/bittrex-market-js.git"
+  },
+  "author": "Grama Ioan-Emanuel <gramai.emanuel@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/gramai/bittrex-market-js/issues"
+  },
+  "homepage": "https://github.com/gramai/bittrex-market-js#readme",
+  "dependencies": {
+    "bittrex-save-locally": "0.0.1"
+  }
+}
