@@ -1,6 +1,6 @@
 {
   "name": "bittrex-markets-to-file",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Saves BTC-<token_name> and ETH-<token_name> data from bittrex",
   "main": "index.js",
   "scripts": {
@@ -10,10 +10,9 @@
     "type": "git",
     "url": "git+https://github.com/gramai/bittrex-markets-to-file.git"
   },
- "dependencies" :
-	{
-		"bittrex-market" : "latest"
-	},
+  "dependencies": {
+    "bittrex-market": "latest"
+  },
   "keywords": [
     "bittrex",
     "websocket",
