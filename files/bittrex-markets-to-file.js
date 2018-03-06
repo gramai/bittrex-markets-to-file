@@ -85,4 +85,4 @@ class Trigger extends EventEmitter{
 
     }
 }
-module.exports = market_trigger;
+module.exports = Trigger;
