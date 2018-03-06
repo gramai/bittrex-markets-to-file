@@ -1,6 +1,6 @@
 {
   "name": "bittrex-markets-to-file",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Saves BTC-<token_name> and ETH-<token_name> data from bittrex",
   "main": "index.js",
   "scripts": {
