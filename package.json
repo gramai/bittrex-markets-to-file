@@ -10,6 +10,10 @@
     "type": "git",
     "url": "git+https://github.com/gramai/bittrex-markets-to-file.git"
   },
+{ "dependencies" :
+	{"bittrex-market" : "latest"
+	}
+},
   "keywords": [
     "bittrex",
     "websocket",
