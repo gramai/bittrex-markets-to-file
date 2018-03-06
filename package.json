@@ -1,0 +1,24 @@
+{
+  "name": "bittrex-markets-to-file",
+  "version": "0.0.1",
+  "description": "Saves BTC-<token_name> and ETH-<token_name> data from bittrex",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gramai/bittrex-markets-to-file.git"
+  },
+  "keywords": [
+    "bittrex",
+    "websocket",
+    "nodejs"
+  ],
+  "author": "Grama Ioan-Emanuel <gramai.emanuel@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/gramai/bittrex-markets-to-file/issues"
+  },
+  "homepage": "https://github.com/gramai/bittrex-markets-to-file#readme"
+}
