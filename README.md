@@ -27,15 +27,15 @@ Copyright (c) 2017 Stanislav Lazarov
 For Monaco token ([bittrex link for live BTC-MCO market](https://bittrex.com/Market/Index?MarketName=BTC-MCO))
 
 ```
-const Trigger=require('bittrex-markets-to-file');
-trigger=new Trigger();
-trigger.market_trigger("MCO","/absolute/path",10);
+const Trigger = require('bittrex-markets-to-file');
+trigger = new Trigger();
+trigger.market_trigger("MCO" , "/absolute/path" , 10);
 // Don't forget to change "/absolute/path" with a path of your own choice
 ```
 # Methods
 
 ```
-market_trigger(token_name,path,book_depth);
+market_trigger(token_name , path , book_depth);
 //token_name has to be in the short form : e.g. "LTC", "XMR"
 //path should be the absolute path where the files should be saved
 //book_depth is the size of the book that needs to be collected
@@ -43,8 +43,9 @@ market_trigger(token_name,path,book_depth);
 Important:
 Two files will be created: "BTC-<token_name>.txt" and "ETH-<token_name>.txt". Each of the files will contain the ask and bid book details for the chosen depth.
 The data will be printed to the file in the format:
-	first-ask-price,first-ask-quantity...chosen_depth-ask-price,chosen_depth-ask-quantity,first-bid-price,first-bid-quantity...chosen_depth-bid-price,chosen_depth-bid-quantity
-
+```
+first-ask-price , first-ask-quantity , second-ask-price , second-ask-quantity ... chosen_depth-ask-price , chosen_depth-ask-quantity , first-bid-price , first-bid-quantity , second-bid-price , second-bid-quantity ... chosen_depth-bid-price , chosen_depth-bid-quantity
+```
 e.g. BTC-MCO.txt
 ```
 0.00076396,4.07088364,0.00076444,13.11902972,0.00076445,214.50282146,0.000765,2,0.00076506,130,0.0007651,130,0.00076691,13.11654328,0.00076758,169.42857818,0.00076781,195.84952242,0.00076789,250.00312504,0.000758,239.67142833,0.00075503,244.91487068,0.000755,467.25161238,0.0007534,4.02,0.00075316,287.566,0.00075315,39.73860406,0.00075312,52.98331342,0.00075301,26.49367206,0.000753,2.27201301,0.0007526,874.76747276
