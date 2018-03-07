@@ -1,5 +1,5 @@
 # bittrex-market-js
-This is a short repository that continuously saves to local files the Bid and Ask Books of all tokens on Bittrex that have both BTC and ETH markets.
+This is a short repository that continuously saves to local files the Bid and Ask Books of chosen tokens on Bittrex that have both BTC and ETH markets.
 
 # Requirements
 Node.js >= 6.0.0
